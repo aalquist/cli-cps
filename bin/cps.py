@@ -173,7 +173,7 @@ def cli():
 
     actions["create-dns"] = create_sub_command(
         subparsers, "create-dns",
-        "Create a new enrollment from a yaml or json input file "
+        "Create a new edgekey.net DNS entry from new enrollment"
         "(Use --file to specify the filename)",
         [{"name": "force","help": "No value"},
          {"name": "edgekeyhost", "help": "edgekey host name you want to create"},
