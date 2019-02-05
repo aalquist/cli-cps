@@ -209,9 +209,8 @@ def cli():
         [{"name": "file", "help": "Input filename from templates folder to read enrollment details"}])
 
     actions["create-dns"] = create_sub_command(
-        subparsers, "create-dns",
-        "Create a new edgekey.net DNS entry from new enrollment"
-        "(Use --file to specify the filename)",
+        subparsers, "create-dns", 
+        "Create a new edgekey.net DNS entry from new enrollment",
         [{"name": "force","help": "No value"},
          {"name": "edgekeyhost", "help": "edgekey host name you want to create"},
          {"name": "job-id", "help": "check status of edgekey host name"},
